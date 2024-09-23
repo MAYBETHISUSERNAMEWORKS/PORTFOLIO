@@ -1,0 +1,122 @@
+html {
+  background: #018DED url(/pexels-padrinan-255379.jpg);
+  background-size: cover;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 10px;
+}
+
+body {
+  margin: 0;
+  font-size: 2rem;
+  display: flex;
+  flex: 1;
+  min-height: 100vh;
+  align-items: center;
+}
+
+.clock {
+  width: 30rem;
+  height: 30rem;
+  border: 20px solid white;
+  border-radius: 50%;
+  margin: 50px auto;
+  position: relative;
+  padding: 2rem;
+  box-shadow:
+    0 0 0 4px rgba(0,0,0,0.1),
+    inset 0 0 0 3px #EFEFEF,
+    inset 0 0 10px black,
+    0 0 10px rgba(0,0,0,0.2);
+}
+.clock-face {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform: translateY(-3px); /* account for the height of the clock hands */
+}
+
+.clock .number {
+  --rotation:0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transform: rotate(var(--rotation));
+}
+
+.clock .number1{
+  --rotation: 30deg;
+}
+
+.clock .number2{
+  --rotation: 60deg;
+}
+
+.clock .number3{
+  --rotation: 90deg;
+}
+
+.clock .number4{
+  --rotation: 120deg;
+}
+
+.clock .number5{
+  --rotation: 150deg;
+}
+
+.clock .number6{
+  --rotation: 180deg;
+}
+
+.clock .number7{
+  --rotation: 210deg;
+}
+
+.clock .number8{
+  --rotation: 240deg;
+}
+
+.clock .number9{
+  --rotation: 270deg;
+}
+.clock .number10{
+  --rotation: 300deg;
+}
+
+.clock .number11{
+  --rotation: 330deg;
+}
+
+
+.hand {
+  --rotation: 0;
+  /* background: black; */
+  position: absolute;
+  top: 50%;
+  border: 1px solid white;
+  border-top-left-radius: 10px;
+  border-top-left-radius: 10px;
+  transform-origin: 100%;
+  transform: rotate(calc(var(--rotation) * 1deg));
+  transition: all 0.05s;
+  transition-timing-function: cubic-bezier(0.79, -0.18, 0.15, 1.1);
+}
+
+.second-hand {
+  width: 50%;
+  height: 6px;
+  background: #ff0000;
+}
+
+.hour-hand {
+  width: 50%;
+  height: 6px;
+  background: #1cc90c33;
+}
+
+.min-hand {
+  width: 50%;
+  height: 6px;
+  background: black;
+}

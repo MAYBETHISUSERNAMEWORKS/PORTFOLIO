@@ -1,0 +1,24 @@
+body{
+  background-image: url("src/assets/blake-verdoorn-cssvEZacHvQ-unsplash.jpg");
+  background-size:cover;
+  background-attachment: fixed;
+  margin: 0;
+  /* OPTIONAL */
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  align-items: center;
+}
+.clock-container{
+  backdrop-filter: blur(5px);
+  width: 100vw;
+  padding: 10px 0;
+}
+.clock{
+  color: white;
+  font-size: 6rem;
+  font-weight: bold;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.37);
+}
