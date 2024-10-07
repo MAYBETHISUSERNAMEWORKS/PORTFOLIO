@@ -1,0 +1,9 @@
+.body{
+  justify-content: center;
+}
+.active{
+  color: #fff700;
+}
+.inactive{
+  color: #000000;
+}

@@ -1,12 +1,14 @@
 // import Accordian from "./assets/Components/Accordian/Accordian"
-import RandomColor from "./assets/Components/Random-Color"
+// import RandomColor from "./assets/Components/Random-Color"
+import StarRating from "./assets/Components/star-ratings"
 
 function App() {
 
   return (
     <>
       {/* <Accordian /> */}
-      <RandomColor />
+      {/* <RandomColor /> */}
+      <StarRating noOfStars={10} />
     </>
   )
 }
