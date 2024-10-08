@@ -1,6 +1,7 @@
 // import Accordian from "./assets/Components/Accordian/Accordian"
 // import RandomColor from "./assets/Components/Random-Color"
-import StarRating from "./assets/Components/star-ratings"
+// import StarRating from "./assets/Components/star-ratings"
+import ImageSlider from "./assets/Components/Image-slider"
 
 function App() {
 
@@ -8,7 +9,12 @@ function App() {
     <>
       {/* <Accordian /> */}
       {/* <RandomColor /> */}
-      <StarRating noOfStars={10} />
+      {/* <StarRating noOfStars={10} /> */}
+      <ImageSlider
+         url={"https://picsum.photos/v2/list"}
+         page={1}
+         limit={10}
+      />
     </>
   )
 }
